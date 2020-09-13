@@ -1,6 +1,6 @@
 # Daily-Task-Planner
 
-![Image of Screenshot](JavascriptCodingQuiz.png);
+![Image of Screenshot](DailyPlannerDemo.png);
 
 ## Demo 
 (https://samisully.github.io/Daily-Task-Planner/)
