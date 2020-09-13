@@ -40,7 +40,7 @@ function timeblockBuilder() {
         .text([visibleHours[i]])
     );
     //creates the text area for the user to input their daily tasks
-    var newTextArea = $("<textarea/>")
+    var newTextArea = $("<textarea>")
       .addClass("col-sm-10 description")
       .attr("data-time", numericalHours[i]);
     $(divRow).append(newTextArea);
@@ -56,7 +56,6 @@ function timeblockBuilder() {
     $(divRow).append(btnArea);
     //   appends all of the created rows into the main container
     $("#full").append(divRow);
-
     //    checks the time for the user and places the correct CSS for the current timeframe.
     if (currentHour == numericalHours[i]) {
       newTextArea.addClass("present");
