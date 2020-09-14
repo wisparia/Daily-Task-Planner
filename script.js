@@ -3,7 +3,7 @@ $(document).ready(function () {
   console.log("ready!");
 });
 // Variable to pull and set the time at the top of the planner
-var currentDate = moment().format("dddd, MMMM do, LT");
+var currentDate = moment().format("dddd, D MMMM");
 var currentHour = moment().hours();
 console.log(currentDate);
 console.log(currentHour);
@@ -23,8 +23,9 @@ var visibleHours = [
 // sets the current date at the top of the page
 $("#currentDay").text(currentDate);
 
-var divRow = $("<div></div>");
 
+// Sets the div rows that the content wil be populated in
+var divRow = $("<div></div>");
 // create for loop that will run through the hours to create each time block
 function timeblockBuilder() {
   //  $("#currentDay").text(currentDate);
